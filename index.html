@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="./assets/white_swan.jpg"
+        class="logo"
+        alt="Picture of white swan" />
+      <h1>Coding Quiz Challenge.</h1>
+      <h2>"Guardians of JavaScript "</h2>
+    </header>
+
+    <main>
+      <section class="box">
+        <p1
+          >Try to answer the following code-related quistions within the lime
+          limit. Keep in mind that incorrect answers will penilize your score
+          time by 5 seconds!</p1
+        >
+        <span id="timer"></span>
+
+        <section class="command">
+          <button class="button" id="btn">Start the Quiz</button>
+        </section>
+
+        <section id="questionContainer" class="hide">
+          <div id="question"></div>
+          <div id="answers" class="btnKey"></div>
+        </section>
+
+        <section class="submition">
+          <div id="pointsContainer" class="hide"></div>
+        </section>
+
+        <section id="high-score">
+          <button class="scores" id="showScore">See the Score</button>
+          <div id="pointsContainer" class="hide">
+            <span id="pointDisplay"></span>
+            <input type="text" name="initials" id="initials" />
+            <button id="submitBtn" class="submit">Submit</button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

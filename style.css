@@ -21,7 +21,7 @@ header {
 }
 
 main{
-  max-width: 100%;
+  /* max-width: 100%; */
   padding: 10px; 
   display: flex;; 
   justify-content: center;
@@ -60,11 +60,13 @@ button {
 }
 
 .box {
+  
+  height: 300px;
   align-items: center; 
   padding: 40px;
   border: 2px solid white;
   border-radius: 20px;
-  box-shadow: 0 0 1px #b3ff51, 0 0 2px #b3ff51, 0 0 6px #b3ff51, 0 0 12px #b3ff51, inset 0 0 1px #b3ff51, inset 0 0 2px #b3ff51, inset 0 0 6px #b3ff51, inset 0 0 12px #b3ff51;
+  box-shadow: 0 0 1px var(--color-green), 0 0 2px (--color-green), 0 0 6px (--color-green), 0 0 12px (--color-green), inset 0 0 1px(--color-green), inset 0 0 2px (--color-green), inset 0 0 6px (--color-green), inset 0 0 12px (--color-green);
     }
   
 .btnKey {
@@ -78,7 +80,7 @@ button {
   font-size: 20px;
   font-weight: bold;
   padding: 2px 20px;
-  margin: 20px 0px; 
+  margin: 200px 0px; 
 }
 
  .command {
@@ -96,6 +98,17 @@ button {
   text-decoration: none;
   list-style-type: none;
   margin: 0.3rem 0;
+}
+
+#question {
+  color: aliceblue;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#timer {
+  font-size: 30px;
+  color: red;
 }
 
 #highScoresList {
@@ -120,7 +133,7 @@ button {
 }
 
 #showScore {
-  margin-top: 10px;
+  margin-top: 100px;
 }
 
   @media only screen and (max-width: 768px) { 
