@@ -3,31 +3,35 @@
   --color-green: #b3ff51;
 }
 
-::before,
-::after {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 } 
 
+
 body {
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
-    background-color: var(--background-blue); 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+  background-color: var(--background-blue); 
 }
+
 
 header {
   text-align: center;
   margin-top: 100px;
 }
 
+
 main{
-  /* max-width: 100%; */
+  width: 100%;
   padding: 10px; 
-  display: flex;; 
+  display: flex;
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
 
 h1,
 h2 {
@@ -35,10 +39,12 @@ h2 {
   color: azure;
 }
 
+
 p1 {
   font-size: 20px;
   color: var(--color-green);
 }
+
 
 button {
   border: 2px solid rgb(221, 221, 244);
@@ -48,9 +54,11 @@ button {
   color: white;
 }
 
+
  button:hover {
   border-color: var(--color-green);
  }
+
 
 .logo {
     width: 50px;
@@ -59,16 +67,20 @@ button {
     padding: 5px;
 }
 
+
 .box {
-  
+  display: flex;
+  flex-direction: column;
+
   height: 300px;
   align-items: center; 
   padding: 40px;
   border: 2px solid white;
   border-radius: 20px;
   box-shadow: 0 0 1px var(--color-green), 0 0 2px (--color-green), 0 0 6px (--color-green), 0 0 12px (--color-green), inset 0 0 1px(--color-green), inset 0 0 2px (--color-green), inset 0 0 6px (--color-green), inset 0 0 12px (--color-green);
-    }
+}
   
+
 .btnKey {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -76,12 +88,14 @@ button {
   margin: 20px 0;
 }
 
+
 .button {
   font-size: 20px;
   font-weight: bold;
   padding: 2px 20px;
-  margin: 200px 0px; 
+  margin-top: 120px;
 }
+
 
  .command {
   display: flex;
@@ -90,15 +104,40 @@ button {
   flex-direction: column;
 }
 
+
+.scores {
+  margin-top: 10px;
+}
+
+
+.submition{
+   width: 70%;
+  height: auto;
+  position: relative;
+  top: 60px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+.high-score{
+  height: 25px;
+  position: relative;
+  top: 35px;
+  padding-bottom: 20px;
+}
+
+
+.high-score--btn{
+  margin-top: 20px;
+}
+
+
 .hide {
   display: none;
 }
 
-.scoresList {
-  text-decoration: none;
-  list-style-type: none;
-  margin: 0.3rem 0;
-}
 
 #question {
   color: aliceblue;
@@ -111,13 +150,20 @@ button {
   color: red;
 }
 
-#highScoresList {
-  margin: 1rem 0;
+
+#list{
+  text-align: justify;
+  list-style: none;
+  color: azure;
 }
 
+
 #pointsContainer {
+  width: 60%;
+  height: 100px;
   padding-bottom: 1rem;
-  border-bottom: 2px solid black;
+  color: azure;
+  font-size: 25px;
 }
 
 #init {
@@ -126,21 +172,21 @@ button {
 
 #initials {
   margin: 0.3rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 #save-btn {
   margin: 0.7rem;
 }
 
-#showScore {
-  margin-top: 100px;
-}
 
-  @media only screen and (max-width: 768px) { 
-    body {
+
+@media only screen and (max-width: 768px) { 
+  body {
     display: grid;
     grid-template-columns: none;
     gap: 10px;
     margin: 20px 0;
   }
- } 
+} 

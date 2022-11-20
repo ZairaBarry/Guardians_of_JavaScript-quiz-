@@ -36,18 +36,27 @@
           <div id="answers" class="btnKey"></div>
         </section>
 
-        <section class="submition">
-          <div id="pointsContainer" class="hide"></div>
-        </section>
-
-        <section id="high-score">
-          <button class="scores" id="showScore">See the Score</button>
-          <div id="pointsContainer" class="hide">
-            <span id="pointDisplay"></span>
-            <input type="text" name="initials" id="initials" />
+        <section id="submition" class="submition hide">
+          <div id="pointsContainer">
+            <label for="#initials">Insert your initials</label>
+            <input type="text" id="initials" />
             <button id="submitBtn" class="submit">Submit</button>
           </div>
         </section>
+
+        <section id="high-score" class="high-score hide">
+          <div id="pointDisplay">
+            <ul id="list"></ul>
+          </div>
+
+          <div class="high-score--btn">
+            <button id="restart">Restart</button>
+            <button id="clear">Clear list</button>
+          </div>
+        </section>
+      </section>
+      <section class="scores">
+        <button id="showScore">See the Score</button>
       </section>
     </main>
 
