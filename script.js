@@ -168,6 +168,8 @@ function quizOver() {
     qContainer.classList.add('hide');
     highScore.classList.add('hide');
     submit.classList.remove('hide');
+    elNumber = 0;
+    console.log(elNumber);
     timer = 0;
 };
 
@@ -204,21 +206,25 @@ function startTime() {
 //function to gather answers
 function chooseAnswer(e) {
     var choisenButton = e.target;
-    if (!choisenButton.dataset.correct) {
+
+    if (elNumber === questions.length - 1) {
+        console.log(questions.length);
+        quizOver()
+        console.log('END');
+        console.log(elNumber);
+    } else if (!choisenButton.dataset.correct) {
         timer -= 5;
         clearQuestion();
         elNumber++;
         showQuestion(questions[elNumber]);
-
-    } else if (elNumber == questions.length - 1) {
-        quizOver();
+        console.log('wrong');
     } else {
         score += 5;
         clearQuestion();
         elNumber++;
         showQuestion(questions[elNumber]);
         console.log(score);
-    }
+    };
 }
 
 
