@@ -152,7 +152,7 @@ function startQuiz() {
     startCommand.classList.add("hide");
     qContainer.classList.remove("hide");
     // elAnswers.classList.remove("hide");
-    timer = 20;
+    timer = 60;
     elNumber = 0;
     startTime();
     while (elAnswers.firstChild) {
